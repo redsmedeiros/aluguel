@@ -1,0 +1,97 @@
+.container{
+ padding: 1rem;
+ margin-top: 2rem;
+}
+
+.cadastro{
+  background-color: gold;
+  border-radius: 1rem;
+  padding: 1rem;
+
+}
+
+.cadastro ul{
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.cadastro h5{
+  text-align: center;
+  color: #363636;
+  padding: 0.5rem;
+  border-bottom: 1px solid #363636;
+}
+
+.cadastro li{
+  color: #363636;
+}
+
+.cadastro a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  color: #363636;
+}
+
+.cadastro li:hover{
+  background-color: #363636;
+  color: gold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.cadastro a:hover{
+  color: gold;
+}
+
+.lancamentos{
+  background-color: #363636;
+  border-radius: 1rem;
+  padding: 1rem;
+
+}
+
+.lancamentos ul{
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.lancamentos h5{
+  text-align: center;
+  color: gold;
+  padding: 0.5rem;
+  border-bottom: 1px solid gold;
+}
+
+.lancamentos li{
+  color: gold;
+}
+
+.lancamentos a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+
+}
+
+.lancamentos li:hover{
+  background-color: gold;
+  color: #363636;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.lancamentos a:hover{
+  color: #363636;
+}
+
+.active-cadastro{
+  background-color: gold;
+  color: #363636;
+  border-radius: 0.5rem;
+}
+

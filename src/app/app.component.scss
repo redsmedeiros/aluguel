@@ -1,0 +1,32 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color: gold;
+  color: #363636;
+  border-bottom: 1px solid black;
+  margin: 0;
+  padding: 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+div{
+  margin: 0;
+  padding: 0;
+}
+
+span{
+  font-weight: bold;
+}
+
+.container{
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.active{
+  color: #363636;
+  font-size: 20px;
+}

@@ -1,0 +1,36 @@
+.container{
+  padding: 1rem;
+
+
+}
+
+.cabecalho{
+  border-radius: 0.5rem;
+  border: 1px solid gold;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.cabecalho h1{
+  color: goldenrod;
+}
+
+.cabecalho a{
+  border: none;
+  background-color: #363636;
+  color: gold;
+  width: 150px;
+  padding-top: 15px;
+  text-align: center;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.cabecalho a:hover{
+  background-color: goldenrod;
+  color: #363636;
+  cursor: pointer;
+}
+
+

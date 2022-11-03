@@ -1,0 +1,27 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Camila Faria",
+      "email": "camila@gmail.com",
+      "telefone": "31 9 98677564",
+      "cpf": "05678954312",
+      "cidade": "Belo Horizonte",
+      "uf": "MG",
+      "bairro": "Centro",
+      "rua": "Avenida Afonso Pena",
+      "numero": "1075",
+      "apto": "402"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
