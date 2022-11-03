@@ -1,6 +1,7 @@
 .container{
   padding: 1rem;
 
+  align-items: center;
 
 }
 
@@ -30,6 +31,84 @@
 .cabecalho a:hover{
   background-color: goldenrod;
   color: #363636;
+  cursor: pointer;
+}
+
+.butoes{
+  display: flex;
+  justify-content: space-around;
+}
+
+.deletar{
+  background-color: 	#363636;
+  border: none;
+  border-radius: 0.5rem;
+  margin-right: 4px;
+  padding: 3px 10px;
+  color: white;
+}
+
+.editar{
+  background-color: gold;
+  border: none;
+  border-radius: 0.5rem;
+  margin-right: 4px;
+  padding: 3px 10px;
+  color: white;
+}
+
+.deletar:hover{
+  background-color: #0f0f0f;
+  cursor: pointer;
+}
+
+.editar:hover{
+  background-color: goldenrod;
+  cursor: pointer;
+}
+
+.carregando{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.ativo{
+  background-color: #3CB371;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  border: none;
+}
+
+.desativado{
+  background-color: #B22222;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  border: none;
+}
+
+.atualizar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.atualizar button{
+  background-color: goldenrod;
+  color: #363636;
+  border: none;
+  border-radius: 15px;
+  width: 200px;
+  height: 40px;
+  font-weight: bold;
+}
+
+.atualizar button:hover{
+  background-color: #363636;
+  color: gold;
   cursor: pointer;
 }
 

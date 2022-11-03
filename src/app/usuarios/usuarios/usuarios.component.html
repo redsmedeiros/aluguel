@@ -1,39 +1,53 @@
 <div class="container">
   <div class="cabecalho">
     <h1>Cadastro de Usuários</h1>
-    <a>Novo Usuário</a>
+    <a [routerLink]="['novo-usuario']">Novo Usuário</a>
+  </div>
+
+  <div class="atualizar">
+    <button (click)="onRefresh()">Atualizar</button>
   </div>
 
   <div class="mt-5 tabela">
-    <table class="table table-borderless table-warning">
+    <table class="table table-bordered table-warning" *ngIf="usuarios$ |async as usuarios; else loading">
       <thead>
         <tr>
           <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Email</th>
+          <th scope="col">Setor</th>
+          <th scope="col">Ações</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
+        <tr *ngFor="let usuario of usuarios ">
+          <td>{{usuario.id}}</td>
+          <td>{{usuario.nome}}</td>
+          <td>{{usuario.email}}</td>
+          <td>{{usuario.setor}}</td>
+          <td>
+            <div class="botoes">
+              <button class="deletar">Deletar</button>
+              <button class="editar">Editar</button>
+              <button [class.ativo]="usuario.ativo" [class.desativado]="!usuario.ativo"></button>
+            </div>
+          </td>
         </tr>
       </tbody>
     </table>
+
+
   </div>
+  <ng-template #loading>
+    <div class="carregando">
+      <div *ngIf="error$ | async; else loadingNoError">
+        Erro ao carregar...
+      </div>
+      <ng-template #loadingNoError>
+        <div class="spinner-border text-warning load" role="status">
+
+        </div>
+      </ng-template>
+    </div>
+  </ng-template>
 </div>

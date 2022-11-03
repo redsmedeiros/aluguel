@@ -1,27 +1,52 @@
 {
+  "produtos": [
+    {
+      "id": 1,
+      "preco": 52.20,
+      "quantidade": 100,
+      "descricao": "Algum Texto"
+    }
+  ],
   "usuarios": [
     {
       "id": 1,
-      "nome": "Camila Faria",
-      "email": "camila@gmail.com",
-      "telefone": "31 9 98677564",
-      "cpf": "05678954312",
-      "cidade": "Belo Horizonte",
-      "uf": "MG",
-      "bairro": "Centro",
-      "rua": "Avenida Afonso Pena",
-      "numero": "1075",
-      "apto": "402"
+      "nome": "Sabrina",
+      "email": "teste@teste.com",
+      "senha": "123",
+      "setor": "administrativo",
+      "ativo": false
+
+    },
+    {
+      "id": 2,
+      "nome": "Maite",
+      "email": "teste@teste.com",
+      "senha": "123",
+      "setor": "administrativo",
+      "ativo": true
+
     }
   ],
-  "comments": [
+  "funcionarios": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "nome": "Sabrina",
+      "email": "func@teste.com",
+      "cargo": "Gerente",
+      "entrada": "administrativo",
+      "rendimento": "teste@teste.com",
+      "setor": "Administrativo",
+      "telefone": "31-9-88888888",
+      "cpf": "078-987-852-25",
+      "rg": "mg 12654741",
+      "nacionalidade": "brasileiro",
+      "estado": "Minas Gerais",
+      "cidade": "Belo Horizonte",
+      "rua": "Avenida Afonso Pena",
+      "cep":"31251127",
+      "numero":"275",
+      "apto":"201"
+
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
