@@ -3,9 +3,10 @@ import { UsuariosServiceService } from './../usuarios-service.service';
 import { Component, OnInit } from '@angular/core';
 import { catchError, empty, Observable, Subject } from 'rxjs';
 import { error } from 'console';
-import { BsModalService } from 'ngx-bootstrap/modal/bs-modal.service';
-import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
+
 import { AlertModalComponent } from 'src/app/shared/alert-modal/alert-modal.component';
+import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { AletModalService } from 'src/app/shared/alet-modal.service';
 
 @Component({
   selector: 'app-usuarios',
@@ -24,9 +25,9 @@ export class UsuariosComponent implements OnInit {
 
   public searchterm!: string
 
-  public bsModalRef!: BsModalRef
 
-  constructor(private usuarioService:UsuariosServiceService, private modalService: BsModalService) {
+
+  constructor(private usuarioService:UsuariosServiceService, private alertService: AletModalService) {
 
 
 
@@ -44,7 +45,8 @@ export class UsuariosComponent implements OnInit {
     this.usuarios$ = this.usuarioService.list().pipe(
       catchError( error => {
         console.log(error)
-        this.error$.next(true)
+        //this.error$.next(true)
+        this.handleError()
         return empty()
       })
     )
@@ -52,11 +54,7 @@ export class UsuariosComponent implements OnInit {
 
   handleError(){
 
-    this.bsModalRef = this.modalService.show(AlertModalComponent)
-
-    this.bsModalRef.content.type = 'danger'
-
-    this.bsModalRef.content.message = 'Erro ao carregar curso'
+    this.alertService.showAlertDanger("Erro ao carregar")
 
   }
 

@@ -19,4 +19,9 @@ export class AlertModalComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onClose(): void{
+
+    this.bsModalRef.hide()
+  }
+
 }

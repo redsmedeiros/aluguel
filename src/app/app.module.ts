@@ -12,13 +12,16 @@ import { UsuariosComponent } from './usuarios/usuarios/usuarios.component';
 import {HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { SharedModule } from './shared/shared.module';
+import { UsuariosFormComponent } from './usuarios/usuarios-form/usuarios-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    UsuariosComponent
+    UsuariosComponent,
+    UsuariosFormComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    ModalModule
+    ModalModule.forRoot(),
+    SharedModule
   ],
   providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]
