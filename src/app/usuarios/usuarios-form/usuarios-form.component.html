@@ -1,1 +1,23 @@
-<p>usuarios-form works!</p>
+<div class="container">
+
+  <div class="cabecalho">
+    <h1>Novo Usuário</h1>
+    <button (click)="retornar()">Retornar</button>
+  </div>
+
+  <div class="corpo">
+
+    <form class="needs-validation" novalidate [formGroup]="form">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Nome</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1">
+          </div>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+</div>

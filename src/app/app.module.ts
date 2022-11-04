@@ -1,6 +1,6 @@
 import { AuthGuard } from './guard/auth.guard';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -30,7 +30,8 @@ import { UsuariosFormComponent } from './usuarios/usuarios-form/usuarios-form.co
     HttpClientModule,
     BrowserAnimationsModule,
     ModalModule.forRoot(),
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
   ],
   providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]
