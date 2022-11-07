@@ -4,9 +4,10 @@
 }
 
 .cadastro{
-  background-color: gold;
+  background-color: white;
   border-radius: 1rem;
   padding: 1rem;
+  border: 3px solid gold;
 
 }
 
@@ -47,9 +48,10 @@
 }
 
 .lancamentos{
-  background-color: #363636;
+  background-color: white;
   border-radius: 1rem;
   padding: 1rem;
+  border: 3px solid #363636;
 
 }
 
@@ -61,7 +63,7 @@
 
 .lancamentos h5{
   text-align: center;
-  color: gold;
+  color: goldenrod;
   padding: 0.5rem;
   border-bottom: 1px solid gold;
 }

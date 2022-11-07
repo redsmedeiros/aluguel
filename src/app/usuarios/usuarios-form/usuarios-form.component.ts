@@ -11,6 +11,13 @@ export class UsuariosFormComponent implements OnInit {
 
   public form!: FormGroup
 
+  public setores: any = [
+    {sigla: "Adm", nome: "Administrativo"},
+    {sigla: "Fin", nome: "Financeiro"},
+    {sigla: "Est", nome: "Estoque"},
+    {sigla: "Ven", nome: "Vendas"},
+  ]
+
   constructor(private fb: FormBuilder, private router: Router) {
 
   }
@@ -22,8 +29,8 @@ export class UsuariosFormComponent implements OnInit {
         nome: [null, [Validators.required, Validators.minLength(3), Validators.maxLength(250)]],
         email: [null, [Validators.required, Validators.minLength(3), Validators.maxLength(50)]],
         senha: [null, [Validators.minLength(3)], Validators.maxLength(10)],
-        setor: [null, [Validators.minLength(3)]],
-        ativo: [null]
+        setor: [null, [Validators.required]],
+        ativo: [null, [Validators.required]]
 
       }
     )
@@ -34,5 +41,21 @@ export class UsuariosFormComponent implements OnInit {
     this.router.navigate(['/usuarios'])
 
   }
+
+ onSubmit(): void{
+
+    console.log(this.form.value)
+
+    if(this.form.valid){
+
+      console.log('ok')
+
+    }
+
+ }
+
+ onCancel(): void{
+
+ }
 
 }

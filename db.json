@@ -13,8 +13,8 @@
       "nome": "Sabrina",
       "email": "teste@teste.com",
       "senha": "123",
-      "setor": "administrativo",
-      "ativo": false
+      "setor": "administrativo"
+
 
     },
     {
@@ -22,8 +22,8 @@
       "nome": "Maite",
       "email": "teste@teste.com",
       "senha": "123",
-      "setor": "administrativo",
-      "ativo": true
+      "setor": "administrativo"
+
 
     }
   ],

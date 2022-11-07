@@ -4,5 +4,5 @@ export interface Usuario {
   email: string,
   senha: string,
   setor: string,
-  ativo: boolean
+
 }

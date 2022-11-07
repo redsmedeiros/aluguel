@@ -29,3 +29,50 @@
   color: #363636;
   cursor: pointer;
 }
+
+.corpo{
+  padding: 2rem;
+  border: 2px solid silver;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+}
+
+label{
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.footer{
+  padding: 2rem;
+  border: 2px solid silver;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cancelar{
+  background-color: red;
+  border: none;
+  padding: 1rem;
+  color: white;
+  width: 200px;
+  border-radius: 0.25rem;
+}
+
+.cancelar:hover{
+  background-color: rgb(151, 0, 0);
+}
+
+.salvar{
+  background-color: green;
+  border: none;
+  padding: 1rem;
+  color: white;
+  width: 200px;
+  border-radius: 0.25rem;
+}
+
+.salvar:hover{
+  background-color: rgb(1, 95, 1);
+}
